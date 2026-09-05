@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import http from 'node:http';
 import { createHmac } from 'node:crypto';
 import { createApp, toNodeListener } from 'h3';
-import { Numra } from '@numra/core';
+import { Numra } from '@getnumra/core';
 import { createNumraHandler } from '../src/index.js';
 import { startMockServer, LOOKUP_OK } from './mock-server.js';
 

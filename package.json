@@ -1,7 +1,7 @@
 {
-  "name": "@numra/nuxt",
+  "name": "@getnumra/nuxt",
   "version": "1.0.0",
-  "description": "Nuxt / Nitro server handler for Numra — the backend endpoint @numra/react or @numra/vue calls. Holds your API key so the browser never does.",
+  "description": "Nuxt / Nitro server handler for Numra — the backend endpoint @getnumra/react or @getnumra/vue calls. Holds your API key so the browser never does.",
   "license": "MIT",
   "homepage": "https://numra.ma",
   "repository": { "type": "git", "url": "git+https://github.com/NumraApp/numra-nuxt.git" },
@@ -15,7 +15,7 @@
   "types": "./index.d.ts",
   "exports": { ".": { "types": "./index.d.ts", "default": "./src/index.js" } },
   "scripts": { "test": "node --test \"test/*.test.js\"" },
-  "dependencies": { "@numra/core": "^1.0.0" },
+  "dependencies": { "@getnumra/core": "^1.0.0" },
   "peerDependencies": { "h3": ">=1.8" },
   "devDependencies": { "h3": "^1.13.0" },
   "publishConfig": { "access": "public", "provenance": true }

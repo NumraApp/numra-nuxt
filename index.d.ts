@@ -1,5 +1,5 @@
 import type { EventHandler, H3Event } from 'h3';
-import type { Numra, NumraError } from '@numra/core';
+import type { Numra, NumraError } from '@getnumra/core';
 
 export interface NumraHandlerOptions {
   /** Numra credential. Server-side only. */
@@ -41,4 +41,4 @@ export interface BrowserCheck {
  */
 export declare function createNumraHandler(options?: NumraHandlerOptions): EventHandler;
 
-export { Numra, NumraError } from '@numra/core';
+export { Numra, NumraError } from '@getnumra/core';

@@ -1,13 +1,13 @@
 import { defineEventHandler, readRawBody, readBody, getRequestHeaders, setResponseStatus } from 'h3';
-import { Numra, createHandlers } from '@numra/core';
+import { Numra, createHandlers } from '@getnumra/core';
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   @numra/nuxt — an h3 event handler for Nuxt's server routes
+   @getnumra/nuxt — an h3 event handler for Nuxt's server routes
    ───────────────────────────────────────────────────────────────────────────
    One file in your app:
 
        // server/api/numra/[...].js
-       import { createNumraHandler } from '@numra/nuxt';
+       import { createNumraHandler } from '@getnumra/nuxt';
 
        export default createNumraHandler({
          apiKey: process.env.NUMRA_API_KEY,
@@ -20,7 +20,7 @@ import { Numra, createHandlers } from '@numra/core';
    gone — so the webhook branch reads raw and nothing else touches the body
    before it.
 
-   Everything else lives in @numra/core's createHandlers, shared with the
+   Everything else lives in @getnumra/core's createHandlers, shared with the
    Express, Fastify and Next packages.
    ═══════════════════════════════════════════════════════════════════════════ */
 
@@ -86,4 +86,4 @@ export function createNumraHandler(options = {}) {
   });
 }
 
-export { Numra, NumraError } from '@numra/core';
+export { Numra, NumraError } from '@getnumra/core';

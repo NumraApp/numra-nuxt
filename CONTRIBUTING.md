@@ -1,4 +1,4 @@
-# Contributing to @numra/nuxt
+# Contributing to @getnumra/nuxt
 
 Patches are welcome. This handler sits in front of a credential that reads a
 shared fraud ledger and spends a merchant's paid quota, so the bar for a change
@@ -43,7 +43,7 @@ Express, Fastify and Next packages.
 So:
 
 - Behaviour that should be identical across those four belongs in
-  **`@numra/core`**, not here. Fixing it here alone is how four copies of
+  **`@getnumra/core`**, not here. Fixing it here alone is how four copies of
   "deny by default" become three.
 - Anything Nitro- or h3-shaped — the event handler, body reading, response
   status — belongs here.
@@ -51,7 +51,7 @@ So:
   [numra-browser](https://github.com/NumraApp/numra-browser), or in
   [numra-vue](https://github.com/NumraApp/numra-vue) if it is Vue-specific.
 
-If your fix lands in `@numra/core`, this package picks it up as a dependency
+If your fix lands in `@getnumra/core`, this package picks it up as a dependency
 bump; say so in the pull request.
 
 ## The conformance gate
